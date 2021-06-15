@@ -3,10 +3,10 @@ const form = document.querySelector("form");
 const input = document.querySelector("#weather");
 
 // Event Listener
-form.addEventListener("submit", fetchWeather);
+form.addEventListener("submit", fetchProfile);
 
 // Fetch Function
-function fetchWeather(e) {
+function fetchProfile(e) {
   e.preventDefault();
   const key = "661984f378bc7b8bb29169ab2d7c6b6e";
   const inputValue = input.value;
