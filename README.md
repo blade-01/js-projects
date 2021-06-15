@@ -1,5 +1,3 @@
-# JS Projects
+# GitHub Profile Checker
 
-> This repo contains lists of my projects done based on JavaScript
-
-## More to come...
+> Allows User to check github profile just by typing in github username
