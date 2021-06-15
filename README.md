@@ -1,3 +1,3 @@
-# GitHub Profile Checker
+# Galeria
 
-> Allows User to check github profile just by typing in github username
+> Galeria utilizes data gotten from unsplash API
