@@ -1,6 +1,6 @@
 // Variables
 const form = document.querySelector("form");
-const input = document.querySelector("#weather");
+const input = document.querySelector("#search");
 
 // Event Listener
 form.addEventListener("submit", fetchWeather);
@@ -23,10 +23,7 @@ function fetchWeather(e) {
     })
     .then((data) => {
       const { main, name, sys, weather } = data;
-      console.log(Math.round(main.temp));
-      console.log(name, sys.country);
-      console.log(weather[0].main);
     })
     .catch((err) => console.log(err));
-  document.querySelector("#weather").value = "";
+  document.querySelector("#search").value = "";
 }
