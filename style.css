@@ -1,0 +1,121 @@
+/* Global Style */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  height: 100vh;
+  color: rgb(0, 0, 14);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  filter: opacity(0.5);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+/* Search Bar */
+
+main {
+  margin: 2rem 0;
+}
+
+form input {
+  padding: 0.8rem 1rem;
+  width: 100%;
+  outline: none;
+  border: solid 1px rgb(0, 9, 27);
+  border-radius: 0 20px 0 20px;
+  opacity: 0.9;
+  transition: all 0.4s ease-in-out;
+}
+
+form input:focus {
+  border-radius: 20px 0 20px 0;
+  opacity: 1;
+}
+
+form input::placeholder {
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+/* Weather Data */
+
+.weather-data {
+  margin: 3rem 0;
+}
+
+.weather-data .inner-data {
+  text-align: center;
+}
+
+.weather-data .inner-data .details h1 {
+  margin: 0.2rem 0;
+  font-size: 30px;
+}
+
+.weather-data .inner-data .details p {
+  text-transform: uppercase;
+}
+
+.weather-data .inner-data img {
+  margin: 3rem 0 2rem;
+  width: 150px;
+}
+
+.weather-data .inner-data .temp-details h2 {
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.weather-data .inner-data .temp-details p {
+  font-size: 17px;
+  letter-spacing: 1.4;
+}
+
+.alert {
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin: 1rem 0;
+}
+.danger {
+  background: lightsalmon;
+}
+
+/* Media Query */
+
+@media screen and (min-width: 500px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 500px;
+  }
+}

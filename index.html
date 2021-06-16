@@ -4,13 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Cloudbase</title>
   </head>
   <body>
-    <form action="">
-      <input type="text" id="weather" />
-      <input type="submit" value="send" />
-    </form>
+    <!-- Search Location -->
+    <main>
+      <div class="container">
+        <form action="GET">
+          <input
+            type="text"
+            id="weather"
+            placeholder="Enter location name..."
+          />
+        </form>
+      </div>
+    </main>
+    <!-- Weather Data -->
+    <section class="weather-data">
+      <div class="container">
+        <div class="inner-data">
+          <div class="details">
+            <h1>Nigeria</h1>
+            <p><span class="day"></span> <span class="time">12:00 PM</span></p>
+          </div>
+          <img src="/img/icon-sun.jpg" alt="weather+img" class="data-icon" />
+          <div class="temp-details">
+            <h2>22°C</h2>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="main.js"></script>
   </body>
 </html>
