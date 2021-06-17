@@ -1,18 +1,16 @@
-// Variables
+// // Variables
 const form = document.querySelector("form");
 const input = document.querySelector("#search");
 
 // Event Listener
-form.addEventListener("submit", fetchWeather);
-
+form.addEventListener("submit", fetchPhoto);
+fetchPhoto();
 // Fetch Function
-function fetchWeather(e) {
+function fetchPhoto(e) {
   e.preventDefault();
-  const key = "661984f378bc7b8bb29169ab2d7c6b6e";
-  const inputValue = input.value;
-  fetch(
-    `https://api.openweathermap.org/data/2.5/weather?q=${inputValue}&appid=${key}&units=metric`
-  )
+  const key = "4PADPOVyni-pXD_JEn8Hk36ENMebemzIz7ys9k2fH8U";
+  const photo = input.value;
+  fetch(`https://api.unsplash.com/${photo}/photos?client_id=${key}`)
     .then((res) => {
       if (res.status !== 200) {
         // Show Output
@@ -22,8 +20,13 @@ function fetchWeather(e) {
       }
     })
     .then((data) => {
-      const { main, name, sys, weather } = data;
+      // const { main, name, sys, weather } = data;
+      console.log(data);
     })
     .catch((err) => console.log(err));
   document.querySelector("#search").value = "";
 }
+
+// // setTimeout(() => {
+// //   document.querySelector(".placeholder-item").remove();
+// // }, 3000);
