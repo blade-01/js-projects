@@ -1,7 +1,7 @@
 /* Global Style */
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 15px;
   line-height: 1.5;
   height: 100vh;
@@ -24,7 +24,6 @@ body {
 
 img {
   width: 100%;
-  filter: opacity(0.5);
 }
 
 ul {
@@ -66,6 +65,8 @@ form input::placeholder {
 
 .weather-data {
   margin: 3rem 0;
+  opacity: 0;
+  transition: opacity 0.4s ease;
 }
 
 .weather-data .inner-data {

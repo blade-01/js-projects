@@ -6,6 +6,9 @@ const dayStamp = document.querySelector(".day");
 const body = document.querySelector("body");
 const temp = document.querySelector(".temp-details h2");
 const greet = document.querySelector(".temp-details p");
+const country = document.querySelector(".details h1");
+const weatherData = document.querySelector(".weather-data");
+const dataImg = document.querySelector(".data-icon");
 
 // Event Listener
 form.addEventListener("submit", fetchProfile);
@@ -29,9 +32,11 @@ function fetchProfile(e) {
     })
     .then((data) => {
       const { main, name, sys, weather } = data;
-      console.log(Math.round(main.temp));
-      console.log(name, sys.country);
-      console.log(weather[0].main);
+      country.textContent = `${name}, ${sys.country}`;
+      temp.textContent = `${Math.round(main.temp)}°C`;
+      weatherData.style.opacity = 1;
+      dataImg.src = `http://openweathermap.org/img/wn/${weather[0].icon}@2x.png`;
+      greet.textContent = `${weather[0].main}`;
     })
     .catch((err) => console.log(err));
   document.querySelector("#weather").value = "";
@@ -85,17 +90,13 @@ function setByGreet() {
   const time = new Date(),
     hour = time.getHours();
   if (hour < 12) {
-    body.style.cssText =
-      "background: url('/img/morning.jpg') no-repeat center center/cover; color: rgb(0, 9, 27);";
-    greet.textContent = "GOOD MORNING";
+    body.style.cssText = "background: ; color: rgb(0, 9, 27);";
   } else if (hour < 18) {
     body.style.cssText =
       "background: url('/img/afternoon.jpg') center center/cover;";
-    greet.textContent = "GOOD AFTERNOON";
   } else {
     body.style.cssText =
       "background: url('/img/evening.jpg') center center/cover;";
-    greet.textContent = "GOOD EVENING";
   }
 }
 
