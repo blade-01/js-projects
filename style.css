@@ -197,6 +197,11 @@ aside {
   animation: bounce 2s ease-in-out infinite;
 }
 
+aside a:hover,
+aside a:active {
+  opacity: 0.8;
+}
+
 @keyframes bounce {
   from {
     transform: scale(0.8);
