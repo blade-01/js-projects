@@ -4,13 +4,50 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GitHub Profile</title>
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>GitHub Pérfil</title>
   </head>
   <body>
-    <form action="">
-      <input type="text" id="weather" />
-      <input type="submit" value="send" />
-    </form>
+    <main class="searchbox">
+      <div class="container">
+        <div class="searchbox-content">
+          <h1>GitHub Pérfil</h1>
+          <form action="">
+            <input type="text" id="user" placeholder="Search user..." />
+          </form>
+          <small class="err">Please provide a valid username</small>
+        </div>
+      </div>
+    </main>
+    <!-- GitHub Data -->
+    <section class="data-output">
+      <div class="container">
+        <div class="data-content">
+          <div class="profile"></div>
+          <div class="repos">
+            <h3>Repositories</h3>
+            <div class="cards"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <aside>
+      <a href="https://github.com/blade-01/js-projects/tree/github-profile"
+        ><i class="fab fa-github fa-2x"></i
+      ></a>
+    </aside>
     <script src="main.js"></script>
   </body>
 </html>

@@ -1,0 +1,245 @@
+/* Global Style */
+body {
+  font: 15px/1.5 "Rubik", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline;
+  padding-right: 1rem;
+}
+
+.fa {
+  color: rgb(0, 9, 22);
+}
+
+.err {
+  opacity: 0;
+  color: rgb(250, 106, 87);
+  font-size: 10px;
+  transition: opacity 0.2s ease;
+}
+
+/* Search/Modal */
+.searchbox {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #fff;
+  overflow: hidden;
+  z-index: 100;
+  display: flex;
+  background: rgb(0, 9, 22);
+  color: #fff;
+  transition: left 0.5s ease;
+}
+
+.searchbox-content {
+  padding: 1rem 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.searchbox-content h1 {
+  margin: 1rem 0;
+  font-size: 24px;
+}
+
+.searchbox-content form input {
+  padding: 0.5rem;
+  width: 100%;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  background: rgb(35, 55, 77);
+  color: rgb(79, 79, 241);
+  font-size: 25px;
+}
+
+.searchbox-content form input::placeholder {
+  color: rgb(79, 79, 241);
+  font-size: 20px;
+}
+
+/* Data Output */
+.data-output {
+  margin: 1rem 0;
+}
+
+.data-output .profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  border-bottom: dashed 1px rgb(1, 1, 104);
+  border-radius: 10px;
+}
+
+.data-output .profile .profile-tags {
+  margin: 1rem 0;
+  width: 90%;
+}
+
+.data-output .profile .profile-tags .tag {
+  margin: 1rem 0;
+  background: rgb(1, 1, 104);
+  padding: 1rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+  color: #fff;
+  text-align: center;
+}
+
+.data-output .profile a {
+  color: rgb(1, 1, 104);
+  border-bottom: dashed 1px rgb(1, 1, 104);
+  line-height: 0.8;
+  margin: 0.2rem 0;
+}
+
+.data-output .profile img {
+  width: 120px;
+  border-radius: 50%;
+  margin: 1rem 0;
+  border: solid 5px rgb(1, 1, 104);
+}
+
+.data-output .profile h3 {
+  margin: 0.5rem 0;
+}
+.data-output .profile p.bio {
+  margin: 2rem 0 0;
+  text-align: center;
+  color: rgb(77, 77, 77);
+}
+.data-output .repos {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.data-output .repos .cards {
+  margin-top: 1.5rem;
+}
+
+.data-output .repos .cards .card {
+  padding: 1rem 1rem 2rem;
+  margin: 1rem 0.1rem;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  text-align: left;
+  color: rgb(112, 112, 112);
+  position: relative;
+}
+
+.data-output .repos .cards .card a {
+  color: rgb(0, 23, 56);
+}
+.data-output .repos h3 {
+  margin-top: 2rem;
+}
+.data-output .repos .cards .card h4:hover {
+  opacity: 0.8;
+}
+.data-output .repos .cards .card h4,
+.data-output .repos .cards .card p {
+  margin: 0 auto 0.8rem;
+  transition: opacity 0.4s ease;
+}
+
+.star-fork {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+}
+
+aside {
+  position: fixed;
+  top: 5px;
+  right: 5px;
+  color: blue;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@media screen and (min-width: 560px) {
+  .container {
+    width: 80%;
+  }
+  .searchbox-content h1 {
+    font-size: 40px;
+  }
+  .searchbox-content form input {
+    padding: 1rem;
+  }
+  .data-output .profile .profile-tags {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
+  .data-output .repos .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1rem;
+  }
+  .err {
+    font-size: initial;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 900px;
+  }
+  .searchbox-content h1 {
+    font-size: 40px;
+  }
+
+  .data-output .repos .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
