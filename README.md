@@ -1,4 +1,4 @@
-# GitHub Perfit - GitHub Profile Checker
+# GitHub Perfil
 
 This is a solution to the [Florin Pop App Ideas Challenge](https://github.com/florinpop17/app-ideas/blob/master/Projects/2-Intermediate/GitHub-Profiles.md).
 
@@ -10,19 +10,21 @@ This is a solution to the [Florin Pop App Ideas Challenge](https://github.com/fl
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [User Stories](#user-stories)
   - [Useful resources](#useful-links-and-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
 ## Overview
 
-### The challenge
+## The Challenge
 
-Users should be able to:
+- [ ] User can enter a username
+- [ ] User can click on search button to retrieve information
+- [ ] User can see the avatar, username, followers and repository count of searched user
+- [ ] User can see all repositories of searched user
+- [ ] User should get an alert if the username is not valid
 
-- View the optimal layout for the game depending on their device's screen size
-- Play Rock, Paper, Scissors against the computer
+To get data from API you can check [fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) in javascript
 
 ### Screenshots
 
@@ -42,16 +44,6 @@ Users should be able to:
 - CSS
 - Flexbox Grid
 - Mobile-first workflow
-
-## User Stories
-
-- [ ] User can enter a username
-- [ ] User can click on search button to retrieve information
-- [ ] User can see the avatar, username, followers and repository count of searched user
-- [ ] User can see all repositories of searched user
-- [ ] User should get an alert if the username is not valid
-
-To get data from API you can check [fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) in javascript
 
 ### Useful links and resources
 
