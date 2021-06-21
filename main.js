@@ -11,10 +11,10 @@ const weatherData = document.querySelector(".weather-data");
 const dataImg = document.querySelector(".data-icon");
 
 // Event Listener
-form.addEventListener("submit", fetchProfile);
+form.addEventListener("submit", fetchWeather);
 
 // Fetch Function
-function fetchProfile(e) {
+function fetchWeather(e) {
   e.preventDefault();
   const key = "661984f378bc7b8bb29169ab2d7c6b6e";
   const inputValue = input.value;
