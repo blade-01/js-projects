@@ -22,15 +22,6 @@ function fetchPhoto(e) {
       }
     })
     .then((data) => {
-      // const {
-      //   urls: { raw },
-      //   user: { first_name },
-      //   location,
-      // } = data;
-      // let output = "";
-      // for (results in data){
-
-      // }
       const results = data.results;
       let output = "";
       results.forEach((result) => {
@@ -52,3 +43,8 @@ function fetchPhoto(e) {
 // // setTimeout(() => {
 // //   document.querySelector(".placeholder-item").remove();
 // // }, 3000);
+
+document.querySelector(".close").addEventListener("click", removeModal);
+function removeModal() {
+  document.querySelector(".modal").remove();
+}

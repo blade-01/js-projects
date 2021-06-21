@@ -10,6 +10,10 @@
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
+    <meta
+      name="description"
+      content="Search for photos based on anything, description, name, location. Just search it..."
+    />
     <link rel="shortcut icon" href="/img/favicon.jpg" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <title>Galeria</title>
@@ -18,7 +22,7 @@
     <main>
       <div class="container">
         <form>
-          <i class="fa fa-search search"></i>
+          <button type="submit" class="fa fa-search search"></button>
           <input type="text" id="search" placeholder="Search for photo" />
         </form>
       </div>
@@ -31,6 +35,22 @@
         </div>
       </div>
     </section>
+    <!-- Modal -->
+    <div class="modal">
+      <div class="container">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+          <img
+            src="/acura-nsx-2560x1440-2019-cars-supercar-8k-20214.jpg"
+            alt="modal+img"
+          />
+          <div class="modal-body">
+            <h2>Maria Makayoko</h2>
+            <p>Ketu, Nigeria</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
