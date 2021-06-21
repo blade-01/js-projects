@@ -1,19 +1,12 @@
 // Variables
 const form = document.querySelector("form");
 const input = document.querySelector("#user");
-
 // Event Listener
 form.addEventListener("submit", fetchData);
 // Fetch Data
 function fetchData(e) {
   e.preventDefault();
   const username = input.value;
-  // if (username == "") {
-  //   validateInput();
-  // } else {
-  //   fetchInfo(username);
-  //   // removeSearch();
-  // }
   fetchInfo(username);
   input.value = "";
 }
