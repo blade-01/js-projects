@@ -91,10 +91,10 @@ function setByGreet() {
     hour = time.getHours();
   if (hour < 12) {
     body.style.cssText =
-      "background: url('/img/morning.jpg') center center/cover; color: rgb(0, 9, 27);";
+      "background: url('/img/morning.jpg') center center/cover;";
   } else if (hour < 18) {
     body.style.cssText =
-      "background: url('/img/afternoon.jpg') center center/cover; color: #fff;";
+      "background: url('/img/afternoon.jpg') center center/cover;";
   } else {
     body.style.cssText =
       "background: url('/img/evening.jpg') center center/cover;";
