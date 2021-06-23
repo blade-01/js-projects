@@ -45,7 +45,7 @@ To get data from API you can check [fetch API](https://developer.mozilla.org/en-
 
 ### Useful links and resources
 
-To get the data you need to communicate with GitHub API. you can either
+To get the data you need to communicate with OpenWeatherMap API.
 
 - [Read Docs](https://www.openweathermap.org)
 
