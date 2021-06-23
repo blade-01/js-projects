@@ -38,6 +38,7 @@ input[type="submit"] {
 .danger {
   border: solid 2px rgb(255, 81, 0);
 }
+
 small {
   opacity: 0;
   transition: opacity 0.4s ease;
