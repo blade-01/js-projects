@@ -50,8 +50,8 @@ To get data from API you can check [fetch API](https://developer.mozilla.org/en-
 To get the data you need to communicate with GitHub API. you can either
 
 - [Read Docs](https://developer.github.com/v3/)
-- [Check API directly](https://api.github.com/users/chaharshivam)
-- [ResponsivelyApp](https://responsively.app) - This extension helped me in viewing my projects in every viewport which helped improve the responsiveness of the game.
+- [Check API directly](https://api.github.com/users/blade-01)
+- [ResponsivelyApp](https://responsively.app) - This extension helped me in viewing my projects in every viewport.
 
 ## Author
 
