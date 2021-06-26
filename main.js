@@ -3,7 +3,7 @@ const input = document.querySelector("#search");
 const form = document.querySelector("form");
 const select = document.querySelector(".select");
 const selectOptions = document.querySelectorAll(".selectdrop li");
-const descriptions = document.querySelectorAll(".desc");
+const footer = document.querySelector(".footer-content");
 
 // Submit Event
 form.addEventListener("submit", fetchMovie);
@@ -65,4 +65,5 @@ function fetchMovie(e) {
     })
     .catch((err) => console.log(err));
   input.value = "";
+  footer.style.opacity = 1;
 }
