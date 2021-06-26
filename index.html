@@ -6,14 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Search for your movies and get their synopsis, cast and crews, more like movie wiki 🎥"
+      content="Search for your movies and get their synopsis, cast and crews, and more 🎥"
     />
-    <!-- Personal Link -->
-    <link rel="stylesheet" href="materialize/css/materialize.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
-    <title>Movie Buff | Home of movie stories</title>
+    <title>Movie Buff 🎥 | Home of movie stories</title>
   </head>
   <body>
+    <main>
+      <div class="container">
+        <div class="main-content">
+          <h1>Hi there 👋</h1>
+          <p>
+            Millions of movies and tv shows are here for you to discover.
+            Explore Now 😉
+          </p>
+        </div>
+        <form>
+          <button type="submit" class="fa fa-search search"></button>
+          <input
+            type="text"
+            id="search"
+            autocomplete="off"
+            placeholder="Search for movies, tv shows, actors..."
+          />
+        </form>
+      </div>
+    </main>
+
+    <!-- Fetched Data -->
+    <div class="movies-tab">
+      <div class="container">
+        <div class="cards">
+          <!-- API Data goes here -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Page Details -->
+    <aside class="single-page">
+      <div class="container">
+        <div class="single-page-content">
+          <!-- API Data goes here  -->
+        </div>
+      </div>
+    </aside>
+    <!-- Modal
+    <div class="modal">
+      <div class="container">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+          <img
+            src="/acura-nsx-2560x1440-2019-cars-supercar-8k-20214.jpg"
+            alt="modal+img"
+          />
+          <div class="modal-body">
+            <h2>Maria Makayoko</h2>
+            <p>Ketu, Nigeria</p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <p>Powered by</p>
+          <img src="img/moviedb.svg" alt="" />
+        </div>
+      </div>
+    </footer>
     <script src="main.js"></script>
   </body>
 </html>
