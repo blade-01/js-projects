@@ -8,4 +8,6 @@
 
 - Cloudbase - [Live Site](https://cloudbase.netlify.app/) | [Code](https://github.com/blade-01/js-projects/tree/weather-app)
 
+- MovieBuff - [Live Site](https://movie-bufff.netlify.app/) | [Code](https://github.com/blade-01/js-projects/tree/movie-buff)
+
 ## Adios! ✌
